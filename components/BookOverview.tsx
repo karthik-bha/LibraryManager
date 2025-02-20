@@ -10,7 +10,7 @@ const BookOverview = ({ title,
     available_copies,
     description,
     color, cover
-}: Book) => { //These props are of type Book defined in types.d.ts
+}: Book) => {  //These props are of type Book defined in types.d.ts 
     return (
         <section className="book-overview">
             <div className="flex flex-1 flex-col gap-5">
