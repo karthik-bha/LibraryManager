@@ -20,12 +20,13 @@ export const sendEmail = async ({
     message: string;
 }) => {
     try {
+        console.log(email, subject, message);
         await qStashClient.publishJSON({
             url: "https://api.emailjs.com/api/v1.0/email/send", // EmailJS API endpoint
             body: {
                 service_id: config.env.emailJs.emailjsServiceId,
                 template_id: config.env.emailJs.emailjsTemplateId,
-                user_id: config.env.emailJs.emailjsPvtKey,
+                user_id: config.env.emailJs.emailjsPublicKey,
                 template_params: {
                     from_name: "LibraryManager", // Fixed sender name
                     to_name: email.split("@")[0], // Extract username from email
