@@ -20,7 +20,7 @@ const config = {
         emailJs: {
             emailjsServiceId: process.env.NEXT_PUBLIC_SERVICE_ID,
             emailjsTemplateId: process.env.NEXT_PUBLIC_TEMPLATE_ID,
-            emailjsPublicKey: process.env.EMAILJS_KEY,
+            emailjsPublicKey: process.env.NEXT_PUBLIC_EMAILJS_KEY,
         }
     }
 }
