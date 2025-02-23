@@ -36,7 +36,7 @@ export const { POST } = serve<InitialData>(async (context) => {
     await sendEmail({
       email,
       subject:"Welcome to library manager",
-      message:`Welcome ${fullName}`
+      message:`Welcome to the Library Manager ${fullName}!`
     });
   })
 
