@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const Page = () => {
   return (
-    <>
+    <div className="flex flex-col gap-4">
       <form action={async () => {
         "use server";
         await signOut();
@@ -15,7 +15,7 @@ const Page = () => {
       </form >
 
       <BookList title="Borrowed Books" books={sampleBooks}/>
-    </>
+    </div>
   )
 }
 

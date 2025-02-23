@@ -12,11 +12,10 @@ const Header = ({ session }: { session: Session }) => {
     return (
         <header className="my-10 flex justify-between gap-5">
             <Link href="/" className="flex gap-2  ">
-                <Image src="/icons/logo.svg" alt="logo" width={40} height={40} />
-                <h1>Library Management</h1>
+                <Image src="/icons/logo.svg" alt="logo" width={40} height={40} />                
             </Link>
 
-            <ul className="flex gap-2 items-center">
+            <ul className="flex gap-4 items-center">
                 <li>
                     <Link href="/library" className={`${pathName === "/library" ? "text-light-200" : "text-light-100"}`}>
                         Library
