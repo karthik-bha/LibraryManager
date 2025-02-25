@@ -1,3 +1,4 @@
+import BookForm from "@/components/admin/forms/BookForm"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
@@ -15,7 +16,7 @@ const Page = () => {
         </div>
 
         <div className="mt-7 w-full overflow-hidden">
-            Table
+            <BookForm/>
         </div>
 
     </section>

@@ -15,7 +15,7 @@ import {
 import { Input } from "@/components/ui/input"
 import Link from 'next/link'
 import { FIELD_NAMES, FIELD_TYPES } from '@/app/constants'
-import ImageUpload from './ImageUpload'
+import FileUpload from './FileUpload'
 import { toast } from '@/hooks/use-toast'
 import { useRouter } from 'next/navigation'
 
@@ -42,27 +42,27 @@ const AuthForm = <T extends FieldValues>({ type, schema, defaultValues, onSubmit
 
 
     const handleSubmit: SubmitHandler<T> = async (data) => {
-   
+
         const result = await onSubmit(data);
-    
+
         if (result.success) {
-          toast({
-            title: "Success",
-            description: isSignIn
-              ? "You have successfully signed in."
-              : "You have successfully signed up.",
-          });
-    
-          router.push("/");
+            toast({
+                title: "Success",
+                description: isSignIn
+                    ? "You have successfully signed in."
+                    : "You have successfully signed up.",
+            });
+
+            router.push("/");
         } else {
-          toast({
-            title: `Error ${isSignIn ? "signing in" : "signing up"}`,
-            description: result.error ?? "An error occurred.",
-            variant: "destructive",
-          });
+            toast({
+                title: `Error ${isSignIn ? "signing in" : "signing up"}`,
+                description: result.error ?? "An error occurred.",
+                variant: "destructive",
+            });
         }
-      };
-    
+    };
+
     return (
         <div className='flex flex-col gap-4'>
             <h1 className='text-2xl font-semibold text-white'>Welcome to the Library Manager</h1>
@@ -79,7 +79,10 @@ const AuthForm = <T extends FieldValues>({ type, schema, defaultValues, onSubmit
                                     <FormLabel className='captialize'>{FIELD_NAMES[field.name as keyof typeof FIELD_NAMES]}</FormLabel>
                                     <FormControl>
                                         {field.name === "universityCard" ? (
-                                            <ImageUpload onFileChange={field.onChange} />
+                                            <FileUpload type="image" accept="image/*"
+                                                placeholder="Upload your university card"
+                                                folder="ids" variant="dark"
+                                                onFileChange={field.onChange} />
                                         ) : (
                                             <Input required type={FIELD_TYPES[field.name as keyof typeof FIELD_TYPES]}{...field}
                                                 className='form-input' />

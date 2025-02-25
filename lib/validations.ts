@@ -12,3 +12,18 @@ export const signInSchema = z.object({
     email: z.string().email(),
     password: z.string().min(8),
 })
+
+export const bookSchema = z.object({
+    title: z.string().trim().min(3).max(100),
+    description: z.string().trim().min(10).max(1000),
+    author: z.string().trim().min(2).max(100),
+    genre: z.string().trim().min(2).max(50),
+    rating:z.coerce.number().min(1).max(5),
+    totalCopies:z.coerce.number().int().positive().lte(100), //lte->lower than
+    coverUrl:z.string().nonempty(),
+    coverColor:z.string().trim().regex(/^#[0-9A-F]{6}$/i), //Must start with #, 
+    // followed by numbers from 0 to 9 and A to F (case insensitive)
+    videoUrl:z.string().nonempty(),
+    summary:z.string().trim().min(10)
+
+})
