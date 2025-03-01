@@ -8,6 +8,13 @@
       "when": 1739979440326,
       "tag": "0000_far_manta",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1740851960439,
+      "tag": "0001_charming_dagger",
+      "breakpoints": true
     }
   ]
 }

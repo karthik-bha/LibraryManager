@@ -19,6 +19,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import FileUpload from '@/components/FileUpload'
 import ColorPicker from './ColorPicker'
+import { createBook } from '@/lib/actions/admin/book'
 
 
 // T -> default value passed down
@@ -50,6 +51,21 @@ const BookForm = ({ type}: Props) => {
 
     const onSubmit = async (values: z.infer<typeof bookSchema>) => { 
         console.log(values);
+        const result = await createBook(values);
+        if(result.success){
+            toast({
+                title:"Success",
+                description:"Book created successfully"
+            })
+            router.push(`/admin/books/${result.data.id}`);
+        }else{
+            toast({
+                title:"Error",
+                description:result.message,
+                variant:"destructive"
+            })
+        }
+       
     }
 
     return (
