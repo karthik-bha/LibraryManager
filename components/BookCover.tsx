@@ -1,4 +1,7 @@
+"use client"
+import config from "@/lib/config";
 import { cn } from "@/lib/utils";
+import { IKImage } from "imagekitio-next";
 import Image from "next/image";
 
 type BookCoverVariant = 'extraSmall' | 'small' | 'medium' | 'regular' | 'wide';
@@ -32,7 +35,13 @@ const BookCover = ({
                 className
             )}            
         >
-            <Image src={coverImage} alt="Book Cover" fill className="w-full h-full object-cover" />
+            <IKImage 
+            loading="lazy"
+            path={coverImage} 
+            urlEndpoint={config.env.imagekit.urlEndpoint}
+            alt="Book Cover" 
+            fill 
+            className="w-full h-full object-cover" />
         </div>
     );
 };

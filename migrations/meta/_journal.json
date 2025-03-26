@@ -15,6 +15,13 @@
       "when": 1740851960439,
       "tag": "0001_charming_dagger",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1743005373679,
+      "tag": "0002_reflective_brother_voodoo",
+      "breakpoints": true
     }
   ]
 }

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "9084986f-456c-449b-ae6e-59ef1f26b129",
+        "title": "CSS in Depth",
+        "author": "Keith J. Grant",
+        "genre": "Web Development",
+        "rating": 4,
+        "coverUrl": "https://www.subtraction.com/wp-content/uploads/2015/03/2015-03-23-random-book-covers-01.jpg?w=640",
+        "coverColor": "#1e2a4b",
+        "description": "CSS in Depth by Keith J. Grant is a comprehensive guide for web developers who want to go beyond the basics of CSS and master the intricacies of styling web pages. The book is designed for intermediate to advanced developers who are already familiar with CSS but want to deepen their understanding and leverage its full potential.",
+        "totalCopies": 18,
+        "availableCopies": 16,
+        "videoUrl": "https://www.subtraction.com/wp-content/uploads/2015/03/2015-03-23-random-book-covers-01.jpg?w=640",
+        "summary": "CSS in Depth starts by reviewing the basic principles of CSS, then quickly moves on to more advanced concepts. Grant emphasizes the importance of understanding the underlying mechanics of CSS properties like layout, box model, and positioning. Readers learn how to use these tools more effectively, making their code more predictable and easier to debug.\n\nThe book dedicates significant time to discussing modern layout systems, especially Flexbox and CSS Grid. These powerful tools enable developers to create complex, responsive designs with minimal code. Grant explains how to use them in different contexts, providing practical examples of when and why they are useful.\n\nOne of the book’s highlights is its in-depth coverage of animations and transitions. Readers learn how to add dynamic effects to their web pages without relying on JavaScript. This is especially useful for creating smooth, interactive designs that improve user experience.\n\nThe book also discusses CSS preprocessors and methodologies like BEM (Block Element Modifier), teaching developers how to structure their stylesheets for larger projects. Grant encourages best practices such as keeping CSS DRY (Don’t Repeat Yourself) and modularizing code.\n\nBy the end of the book, readers will have the knowledge and confidence to tackle complex CSS challenges and create stunning web interfaces with efficiency and elegance."
+    },
+    {
+        "id": "a8f5f167-7f6d-4b5f-9e5e-5b3f7b2e4b15",
+        "title": "JavaScript: The Good Parts",
+        "author": "Douglas Crockford",
+        "genre": "Web Development",
+        "rating": 5,
+        "coverUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpKEIeqZ4I0XTZL2KDuVo4q_FqgrtHgg31Uw&s",
+        "coverColor": "#2b2b2b",
+        "description": "JavaScript: The Good Parts by Douglas Crockford is a must-read for web developers looking to understand the most elegant and powerful aspects of JavaScript while avoiding its pitfalls. The book focuses on the language’s strengths and best practices.",
+        "totalCopies": 20,
+        "availableCopies": 15,
+        "videoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpKEIeqZ4I0XTZL2KDuVo4q_FqgrtHgg31Uw&s",
+        "summary": "This book explores JavaScript’s elegant parts, such as functions, closures, and prototypal inheritance. It warns against problematic areas like global variables and the inconsistent type system. Crockford provides in-depth explanations of core concepts, helping developers write cleaner and more efficient code."
+    },
+    {
+        "id": "c0b7d0f1-9d27-4b4c-8c9d-12c8f3e7d7c4",
+        "title": "Eloquent JavaScript",
+        "author": "Marijn Haverbeke",
+        "genre": "Programming",
+        "rating": 4,
+        "coverUrl": "https://miro.medium.com/v2/resize:fit:465/0*kBgMf-Nn6Okv0pun.jpg",
+        "coverColor": "#3a3f44",
+        "description": "Eloquent JavaScript by Marijn Haverbeke is an insightful and engaging guide to mastering JavaScript, combining theoretical knowledge with hands-on coding exercises.",
+        "totalCopies": 25,
+        "availableCopies": 22,
+        "videoUrl": "https://miro.medium.com/v2/resize:fit:465/0*kBgMf-Nn6Okv0pun.jpg",
+        "summary": "This book provides an in-depth introduction to JavaScript, covering its syntax, functions, object-oriented programming, and asynchronous programming. It includes interactive exercises and real-world examples that reinforce key concepts."
+    },
+    {
+        "id": "5d41402a-b5f7-4b0d-bc45-3eac42c8e2aa",
+        "title": "You Don’t Know JS: Scope & Closures",
+        "author": "Kyle Simpson",
+        "genre": "JavaScript",
+        "rating": 5,
+        "coverUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWNmNDTc9ju0SWzFJcdySxozutNvNawtGsg&s",
+        "coverColor": "#1c1c1c",
+        "description": "Kyle Simpson’s 'You Don’t Know JS' series delves deep into JavaScript’s core mechanics. The 'Scope & Closures' book focuses on understanding scope and closures, which are essential to mastering JavaScript.",
+        "totalCopies": 15,
+        "availableCopies": 10,
+        "videoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWNmNDTc9ju0SWzFJcdySxozutNvNawtGsg&s",
+        "summary": "The book explains the fundamental concepts of scope, lexical scope, and closures in JavaScript. It helps developers avoid common pitfalls and leverage closures effectively for cleaner and more efficient code."
+    }
+]
